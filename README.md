@@ -11,6 +11,8 @@ Inventory platform for small businesses in Rwanda still running stock on Excel. 
 
 **Next.js 14 (App Router) · TypeScript · Tailwind · Supabase/Postgres · Docker · Google Cloud Run**
 
+**[▶ Live at stokaa.com](https://stokaa.com)**
+
 - Multi-tenant isolation enforced in **Postgres Row Level Security**, not the UI layer — every table scoped by `company_id` with `current_company_id()` / `current_effective_role()` policies
 - Three-tier role model (Admin / Manager / Employee) plus a Manager-grantable "elevated" flag
 - Hybrid auth: email-invite flow for staff with email, username + company-code login for staff without — synthetic addresses under the hood, since Supabase Auth requires an email
