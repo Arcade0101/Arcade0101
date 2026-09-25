@@ -2,7 +2,7 @@
 
 Full-Stack Engineer specializing in TypeScript/Next.js frontends and Python/PostgreSQL backends.
 
-Most projects are commercial and closed-source; the projects below are presented as technical summaries rather than source code.
+Most projects below are presented as technical summaries rather than source code.
 
 ---
 
