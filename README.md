@@ -1,46 +1,45 @@
 # Arcade
 
-Full-stack engineer. I build production SaaS — TypeScript/Next.js on the front, Postgres and Python on the back.
+Full-Stack Engineer specializing in TypeScript/Next.js frontends and Python/PostgreSQL backends.
 
-Most of my work is commercial and lives in private repos, so what you see below is the write-up, not the source. Happy to walk through architecture or give code access on request.
-
----
-
-### 🏪 StokaFlow — multi-tenant inventory SaaS
-Inventory platform for small businesses in Rwanda still running stock on Excel. Sold as a hardware + software bundle (tablet kiosk + barcode scanner) on a monthly lease, which is what separates it from the software-only competition.
-
-**Next.js 14 (App Router) · TypeScript · Tailwind · Supabase/Postgres · Docker · Google Cloud Run**
-
-**[▶ Live at stokaa.com](https://stokaa.com)**
-
-- Multi-tenant isolation enforced in **Postgres Row Level Security**, not the UI layer — every table scoped by `company_id` with `current_company_id()` / `current_effective_role()` policies
-- Three-tier role model (Admin / Manager / Employee) plus a Manager-grantable "elevated" flag
-- Hybrid auth: email-invite flow for staff with email, username + company-code login for staff without — synthetic addresses under the hood, since Supabase Auth requires an email
-- In-browser **camera barcode scanning**, verified end-to-end on a physical phone
-- Multi-stage Docker build → Cloud Build → Artifact Registry, Next standalone output
-
-→ **[Read the full case study](https://github.com/Arcade0101/stokaflow-showcase)**
+Most projects are commercial and closed-source; the projects below are presented as technical summaries rather than source code.
 
 ---
 
-### ✈️ Orin — flight booking engine `private`
-Travel booking MVP on the **Duffel** API. Built on real GDS/ticketing domain experience rather than a tutorial — search, offer selection, and order creation against live airline inventory.
+### StokaFlow — Multi-Tenant Inventory SaaS
 
-### 💳 Peyaa — payments `private`
-Fast-path payment flow.
+**Next.js 14 · TypeScript · Tailwind CSS · Supabase/PostgreSQL · Docker · Google Cloud Run**
 
-### 🤖 OrinPrime — shift assistant backend `private` `Python`
-Scheduling and shift-management API.
+Live: [stokaa.com](https://stokaa.com) · Case study: [stokaflow-showcase](https://github.com/Arcade0101/stokaflow-showcase)
+
+- Designed multi-tenant data isolation using PostgreSQL Row Level Security (RLS), scoped by `company_id`
+- Implemented a three-tier role system: Admin, Manager, and Employee, with a Manager-grantable elevated permission
+- Built hybrid authentication supporting email-based staff invitations and username + company-code authentication for staff without email
+- Implemented in-browser camera-based barcode scanning
+
+### Orin — Flight Booking Engine `private`
+
+**Duffel API · REST APIs**
+
+- Integrated the Duffel API for flight search, offer selection, and order creation against live airline inventory
+
+### Peyaa — Payment Processing `private`
+
+**Payment APIs · Backend Integration**
+
+- Built payment-processing workflows and supporting backend integration
+
+### OrinPrime — Shift Management Backend `private`
+
+**Python · REST API · Scheduling**
+
+- Developed a backend API for scheduling and shift-management workflows
 
 ---
 
-### Stack
+### Technical Stack
 
 **Languages** TypeScript · Python · SQL · C#
 **Frontend** Next.js · React · Tailwind CSS
-**Backend** Node · Supabase · PostgreSQL (RLS, triggers, migrations) · REST APIs
-**Infra** Docker · Google Cloud Run · Cloud Build · Artifact Registry
-
----
-
-📍 Building from Japan, shipping for Rwanda.
+**Backend & Data** Node.js · Python · Supabase · PostgreSQL · Row Level Security · Database Triggers · Migrations · REST APIs
+**Infrastructure & Cloud** Docker · AWS · Google Cloud Run · Google Cloud Build · Artifact Registry
