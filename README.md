@@ -37,9 +37,9 @@ Live: [stokaa.com](https://stokaa.com) · Case study: [stokaflow-showcase](https
 
 ### AI Voice & Content Pipeline `private`
 
-**Python · LLM Content Generation · Text-to-Speech (Google Cloud, Fish Audio)**
+**Python · LLM Content Generation · Multi-Provider TTS Integration**
 
-- Built an automated content generation pipeline with LLM-structured output and multi-provider text-to-speech, including provider A/B testing
+- Built an automated content generation pipeline with LLM-structured output and a provider-agnostic text-to-speech integration layer, including automated quality evaluation across providers
 
 ---
 
@@ -48,5 +48,5 @@ Live: [stokaa.com](https://stokaa.com) · Case study: [stokaflow-showcase](https
 **Languages** TypeScript · Python · SQL · C#
 **Frontend** Next.js · React · Tailwind CSS
 **Backend & Data** Node.js · Python · Supabase · PostgreSQL · Row Level Security · Database Triggers · Migrations · REST APIs
-**AI & Voice** LLM Content Generation · Text-to-Speech (Google Cloud, Fish Audio) · Automated Media Pipelines
+**AI & Voice** LLM Content Generation · TTS Integration & Provider Evaluation · Automated Media Pipelines
 **Infrastructure & Cloud** Docker · AWS · Google Cloud Run · Google Cloud Build · Artifact Registry
