@@ -35,15 +35,11 @@ Live: [stokaa.com](https://stokaa.com) · Case study: [stokaflow-showcase](https
 
 - Developed a backend API for scheduling and shift-management workflows
 
-### TCJ Japanese — Automated Study-Content Pipeline
+### AI Voice & Content Pipeline `private`
 
-**Python · LLM Content Generation · Text-to-Speech (Google Cloud, Fish Audio) · Static Site Generation**
+**Python · LLM Content Generation · Text-to-Speech (Google Cloud, Fish Audio)**
 
-Live: [arcade0101.github.io/tcj-japanese](https://arcade0101.github.io/tcj-japanese/) · [Source](https://github.com/Arcade0101/tcj-japanese)
-
-- Automated generation of structured review sheets and JLPT-format practice tests
-- Multi-voice text-to-speech pipeline for podcast-style audio, with provider A/B testing (Google Cloud TTS, Fish Audio)
-- Auto-graded quiz engine
+- Built an automated content generation pipeline with LLM-structured output and multi-provider text-to-speech, including provider A/B testing
 
 ---
 
