@@ -29,9 +29,6 @@ Travel booking MVP on the **Duffel** API. Built on real GDS/ticketing domain exp
 ### 💳 Peyaa — payments `private`
 Fast-path payment flow.
 
-### 📊 XAUUSD tooling — `Python` `private`
-Trading journal and prop-firm risk tooling: rule tracking, drawdown limits, execution logging.
-
 ### 🤖 OrinPrime — shift assistant backend `private` `Python`
 Scheduling and shift-management API.
 
